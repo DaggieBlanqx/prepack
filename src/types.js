@@ -92,6 +92,10 @@ export type Descriptor = {
 
   get?: UndefinedValue | CallableObjectValue | AbstractValue,
   set?: UndefinedValue | CallableObjectValue | AbstractValue,
+
+  joinCondition?: AbstractValue,
+  descriptor1?: Descriptor,
+  descriptor2?: Descriptor,
 };
 
 export type FunctionBodyAstNode = {
